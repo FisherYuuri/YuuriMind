@@ -1,3 +1,7 @@
+import torch
+from typing import Optional
+import math
+
 def precompute_freqs_cis(dim: int, end: int = int(32 * 1024), rope_base: float = 1e6,
                          rope_scaling: Optional[dict] = None):
     """
